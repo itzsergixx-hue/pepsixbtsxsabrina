@@ -1,44 +1,40 @@
 
-const menuBtn = document.getElementById("menuBtn");
-const nav = document.getElementById("nav");
+document.addEventListener("DOMContentLoaded", () => {
 
-// Menú para celulares
-menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("open");
-});
+  // Desplazamiento suave para los enlaces
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", event => {
+      const target = document.querySelector(link.getAttribute("href"));
 
-// Cerrar menú al seleccionar una sección
-document.querySelectorAll("#nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        nav.classList.remove("open");
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
     });
-});
+  });
 
-// Animaciones al desplazarse
-const observer = new IntersectionObserver((entries) => {
+  // Efecto de aparición al desplazarse
+  const elements = document.querySelectorAll(
+    ".product-card, .artist-card, .campaign-card, .section-text"
+  );
+
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
     });
-}, {
+  }, {
     threshold: 0.15
-});
+  });
 
-document.querySelectorAll(
-    ".section, .product, .history-card, .artist-content, .advertising-image"
-).forEach(element => {
+  elements.forEach(element => {
+    element.classList.add("reveal");
     observer.observe(element);
-});
+  });
 
-// Efecto visual de la portada
-const hero = document.querySelector(".hero");
-
-window.addEventListener("scroll", () => {
-    const position = window.scrollY;
-
-    if (hero && position < 600) {
-        hero.style.backgroundPosition =
-            `center ${position * 0.15}px`;
-    }
 });

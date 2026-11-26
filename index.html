@@ -4,139 +4,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pepsi | Refresh Your World</title>
+  <title>Pepsi | Thirsty for More</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-  <a href="#inicio" class="logo">◒ PEPSI<span>.</span></a>
-  <button id="menuBtn" aria-label="Abrir menú">☰</button>
-  <nav id="nav">
+<header class="header">
+  <a href="#inicio" class="logo">PEPSI<span>●</span></a>
+  <nav>
+    <a href="#inicio">Inicio</a>
     <a href="#historia">Historia</a>
     <a href="#productos">Productos</a>
-    <a href="#publicidad">Publicidad</a>
-    <a href="#sabrina">Sabrina</a>
-    <a href="#bts">BTS</a>
+    <a href="#campanas">Campañas</a>
+    <a href="#artistas">Artistas</a>
   </nav>
 </header>
 
 <section class="hero" id="inicio">
   <div class="hero-content">
-    <span class="tag">REFRESH YOUR WORLD</span>
-    <h1>EL SABOR DE<br>UNA <span>GENERACIÓN.</span></h1>
-    <p>Más que una bebida, una experiencia que conecta música, cultura, diversión y millones de personas.</p>
-    <a href="#historia" class="btn">DESCUBRE PEPSI ↓</a>
+    <p class="eyebrow">THIRSTY FOR MORE</p>
+    <h1>EL SABOR DE<br>IR MÁS ALLÁ.</h1>
+    <p>Disfruta cada momento. Vive nuevas experiencias con Pepsi.</p>
+    <a href="#productos" class="btn">DESCUBRE MÁS</a>
   </div>
-
   <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=1000&q=90" alt="Bebida refrescante">
-    <div class="circle"></div>
-    <div class="hero-label">THIRSTY FOR MORE</div>
+    <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=1000" alt="Bebida refrescante">
   </div>
 </section>
 
-<section class="section" id="historia">
-  <span class="tag">01 / NUESTRA HISTORIA</span>
-  <h2>Una historia que <span>refresca.</span></h2>
-  <p class="intro">Desde sus orígenes hasta convertirse en una de las marcas más reconocidas del mundo.</p>
-
-  <div class="history-grid">
-    <article class="history-card">
-      <h3>1893</h3>
-      <p>Caleb Bradham crea una bebida conocida inicialmente como Brad's Drink.</p>
-    </article>
-    <article class="history-card">
-      <h3>1898</h3>
-      <p>La bebida adopta el nombre Pepsi-Cola.</p>
-    </article>
-    <article class="history-card">
-      <h3>ACTUALIDAD</h3>
-      <p>Pepsi continúa innovando en productos, identidad visual y campañas globales.</p>
-    </article>
+<section class="history section" id="historia">
+  <div class="section-image">
+    <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=1000" alt="Lata de bebida">
+  </div>
+  <div class="section-text">
+    <p class="eyebrow">DESDE 1898</p>
+    <h2>Una historia que refresca generaciones</h2>
+    <p>Pepsi nació en 1898 y se convirtió en una de las marcas de bebidas más reconocidas del mundo. A través de la innovación, la música, el deporte y la cultura, ha conectado con generaciones de consumidores.</p>
+    <p>Su identidad representa energía, diversión y una actitud que invita a vivir cada momento al máximo.</p>
   </div>
 </section>
 
-<section class="section products" id="productos">
-  <span class="tag">02 / PORTAFOLIO</span>
-  <h2>Elige tu <span>Pepsi.</span></h2>
-  <p class="intro">Distintas presentaciones para diferentes preferencias.</p>
+<section class="products section" id="productos">
+  <div class="section-heading">
+    <p class="eyebrow">DESCUBRE TU FAVORITA</p>
+    <h2>El universo Pepsi</h2>
+    <p>Una opción para cada gusto y momento.</p>
+  </div>
 
-  <div class="gallery">
-    <article class="product">
-      <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=800&q=85" alt="Refresco de cola">
+  <div class="product-grid">
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=700" alt="Bebida Pepsi">
       <h3>Pepsi Original</h3>
-      <p>El sabor clásico que todos reconocen.</p>
+      <p>El sabor clásico que todos conocen.</p>
     </article>
 
-    <article class="product">
-      <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=800&q=85" alt="Bebida fría">
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1624517452488-04869289c4ca?w=700" alt="Bebida cola">
       <h3>Pepsi Zero Sugar</h3>
-      <p>Una alternativa sin azúcar.</p>
+      <p>Todo el sabor, sin azúcar.</p>
     </article>
 
-    <article class="product">
-      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=85" alt="Bebidas refrescantes">
-      <h3>Pepsi Experience</h3>
-      <p>Frescura para compartir momentos.</p>
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=700" alt="Bebida refrescante">
+      <h3>Pepsi Black</h3>
+      <p>Una experiencia intensa y refrescante.</p>
     </article>
   </div>
 </section>
 
-<section class="advertising" id="publicidad">
-  <div class="advertising-image">
-    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85" alt="Concierto y música">
+<section class="campaign section" id="campanas">
+  <div class="section-heading">
+    <p class="eyebrow">MÁS QUE UNA BEBIDA</p>
+    <h2>Pepsi en la cultura pop</h2>
+    <p>La música, el entretenimiento y la creatividad forman parte del universo de la marca.</p>
   </div>
-  <div class="advertising-text">
-    <span class="tag">03 / PUBLICIDAD</span>
-    <h2>La música, la cultura y <span>Pepsi.</span></h2>
-    <p>Pepsi utiliza campañas publicitarias que conectan con el entretenimiento, el deporte y las experiencias sociales.</p>
-    <a href="https://www.pepsico.com/" target="_blank" rel="noopener">CONOCE PEPSICO ↗</a>
+
+  <div class="campaign-grid">
+    <article class="campaign-card">
+      <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=900" alt="Concierto musical">
+      <div class="campaign-overlay">
+        <h3>La música nos conecta</h3>
+        <p>Momentos que se convierten en recuerdos.</p>
+      </div>
+    </article>
+
+    <article class="campaign-card">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=900" alt="Estadio deportivo">
+      <div class="campaign-overlay">
+        <h3>Pasión por el deporte</h3>
+        <p>Emoción y energía en cada jugada.</p>
+      </div>
+    </article>
   </div>
 </section>
 
-<section class="artist sabrina" id="sabrina">
-  <div class="artist-content">
-    <span class="tag">04 / POP CULTURE</span>
-    <h2>SABRINA<br><span>CARPENTER.</span></h2>
-    <p>Una propuesta creativa que combina el universo pop de Sabrina Carpenter con la identidad azul y roja de Pepsi.</p>
-    <h3>POP THE MOMENT.</h3>
-    <p class="disclaimer">Concepto publicitario ficticio. No representa una colaboración oficial.</p>
-    <a href="https://www.instagram.com/sabrinacarpenter/" target="_blank" rel="noopener" class="btn">VER A SABRINA ↗</a>
+<section class="artists section" id="artistas">
+  <div class="section-heading">
+    <p class="eyebrow">MÚSICA Y CULTURA</p>
+    <h2>Pepsi x Pop Culture</h2>
+    <p>Dos propuestas creativas inspiradas en artistas que conectan con millones de fans.</p>
   </div>
-  <div class="artist-art pink">
-    <div class="artist-circle">S</div>
-    <div class="artist-caption">SABRINA CARPENTER<br>POP EXPERIENCE</div>
+
+  <div class="artist-grid">
+
+    <article class="artist-card sabrina">
+      <div class="artist-photo">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sabrina_Carpenter_-_O2_Arena_2025_-_102.jpg" alt="Sabrina Carpenter" loading="lazy">
+      </div>
+      <div class="artist-info">
+        <span>POP EXPERIENCE</span>
+        <h3>Sabrina Carpenter</h3>
+        <p>Una propuesta creativa que combina música pop, estilo y una personalidad vibrante.</p>
+        <a href="https://www.universal-music.de/sabrina-carpenter/fotos" target="_blank">Ver fotografías ↗</a>
+      </div>
+    </article>
+
+    <article class="artist-card bts">
+      <div class="artist-photo">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangtan_Boys_at_Incheon_Korean_Music_Wave_2013_01.jpg" alt="BTS" loading="lazy">
+      </div>
+      <div class="artist-info">
+        <span>GLOBAL MUSIC</span>
+        <h3>BTS</h3>
+        <p>Una celebración de la música, la energía y la conexión global con sus fans.</p>
+        <a href="https://commons.wikimedia.org/wiki/Category:BTS" target="_blank">Ver fotografías ↗</a>
+      </div>
+    </article>
+
   </div>
+  <p class="disclaimer">Conceptos creativos de presentación académica. No representan colaboraciones oficiales anunciadas por Pepsi, Sabrina Carpenter o BTS.</p>
 </section>
 
-<section class="artist bts" id="bts">
-  <div class="artist-art purple">
-    <div class="artist-circle">BTS</div>
-    <div class="artist-caption">MUSIC · ENERGY · CONNECTION</div>
-  </div>
-  <div class="artist-content">
-    <span class="tag">05 / K-POP EXPERIENCE</span>
-    <h2>BTS <span>× PEPSI.</span></h2>
-    <p>Una propuesta conceptual inspirada en BTS: siete artistas, una comunidad global y una experiencia musical que conecta culturas.</p>
-    <h3>REFRESH THE STAGE.</h3>
-    <p class="disclaimer">Concepto publicitario ficticio. No representa una colaboración oficial.</p>
-    <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank" rel="noopener" class="btn">VER BTS ↗</a>
-  </div>
-</section>
-
-<section class="final-section">
-  <span class="tag">PEPSI</span>
-  <h2>EL SABOR CAMBIA.<br><span>LA EXPERIENCIA PERMANECE.</span></h2>
-  <p>REFRESH YOUR WORLD.</p>
+<section class="final-banner">
+  <p>PEPSI</p>
+  <h2>VIVE EL MOMENTO.<br>ATRÉVETE A MÁS.</h2>
+  <a href="#inicio" class="btn">VOLVER AL INICIO</a>
 </section>
 
 <footer>
-  <div class="logo">◒ PEPSI<span>.</span></div>
-  <p>Presentación académica y propuesta creativa de marca.</p>
-  <p>© 2026 Pepsi Brand Experience</p>
+  <div class="footer-logo">PEPSI ●</div>
+  <p>Proyecto académico | Diseño web promocional</p>
+  <p>© 2026 Pepsi - Concepto de presentación</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
